@@ -14,8 +14,19 @@ def drawBar(plt):
     plt.ylabel("Random Value")
     plt.show()
 
+def Flip():
+	return 1 if random.random() < .5 else 0
+
+def CountFlip(times):
+	count = 0
+	for _ in range(times):
+		count += Flip()
+	print "Flipped ", count, " heads of ", times, "flips"
+
+
+
 
 
 if __name__ == "__main__":
     random.seed()
-    drawBar(plt)
+    CountFlip(10000)
