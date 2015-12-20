@@ -2,15 +2,6 @@ from __future__ import division
 import matplotlib.pyplot as plt
 import random, math
 from collections import Counter, defaultdict
-from functools import partial
-from linear_algebra import shape, get_row, get_column, make_matrix, \
-    vector_mean, vector_sum, dot, magnitude, vector_subtract, scalar_multiply
-from statistics import correlation, standard_deviation, mean
-from probability import inverse_normal_cdf
-from gradient_descent import maximize_batch
-import math, random, csv
-import matplotlib.pyplot as plt
-import dateutil.parser
 
 
 
@@ -43,13 +34,6 @@ def TestManyTimes(tests,flips)
 	count = 0
 	for _ in range(tests):
 		CountFlip(flips)
-
-def read_csv(path):
-	with open("data/SFPD_Incidents_-_Previous_Three_Months.csv","rb") as f:
-		reader = csv.DictReader(f, delimiter="\t")
-		data = [parse_dict]
-
-
 
 if __name__ == "__main__":
     random.seed()
