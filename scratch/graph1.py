@@ -10,7 +10,6 @@ import dateutil.parser
 # From book
 #
 #
-
 # Returns a 
 def parse_dict(input_dict, parser_dict):
     return { field_name : try_parse_field(field_name, value, parser_dict)
@@ -33,12 +32,31 @@ def parse_rows_with(reader, parsers):
 #
 #
 
+def count_like(reader):
+    return Counter(row['Category'] for row in reader)
+
 if __name__ == "__main__":
     random.seed()
 
     data = []
 
-    with open("data/SFPD_Incidents_-_Previous_Three_Months.csv","rb") as f:
-        reader = csv.DictReader(f, delimiter="\t")
-        for line in parse_rows_with(reader, [dateutil.parser.parse, None, float]):
-            data.append(line)
+    with open("data/SFPD_Incidents_-_Previous_Three_Months.csv", "rb") as f:
+        reader = csv.DictReader(f)
+        # print reader
+
+        data = count_like(reader)
+
+        print data.most_common(10)
+
+        # for row in data:
+        #     print row
+
+
+
+        # for line in parse_rows_with(reader, [dateutil.parser.parse, None, int]):
+        #     data.append(line)
+
+
+    # for row in data:
+    #     if any(x is None for x in row):
+    #         print row
