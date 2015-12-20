@@ -23,7 +23,17 @@ def CountFlip(times):
 		count += Flip()
 	print "Flipped ", count, " heads of ", times, "flips"
 
+def testExtreme():
 
+
+def TestManyTimes(tests,flips)
+	count = 0
+	for _ in range(tests):
+		CountFlip(flips)
+
+def read_csv(path):
+	with open(path,"rb") as f:
+		
 
 
 
