@@ -1,56 +1,44 @@
 from __future__ import division
-import matplotlib.pyplot as plt
-import random, math
 from collections import Counter, defaultdict
 from functools import partial
-from linear_algebra import shape, get_row, get_column, make_matrix, \
-    vector_mean, vector_sum, dot, magnitude, vector_subtract, scalar_multiply
-from statistics import correlation, standard_deviation, mean
-from probability import inverse_normal_cdf
-from gradient_descent import maximize_batch
 import math, random, csv
 import matplotlib.pyplot as plt
 import dateutil.parser
 
+#
+#
+# From book
+#
+#
 
+# Returns a 
+def parse_dict(input_dict, parser_dict):
+    return { field_name : try_parse_field(field_name, value, parser_dict)
+            for field_name, value in input_dict.iteritems() }
 
+def parse_row(input_row, parsers):
+    """given a list of parsers (some of which may be None)
+    apply the appropriate one to each element of the input_row"""
+    return [parser(value) if parser is not None else value
+        for value, parser in zip(input_row, parsers)]
 
-def drawBar(plt):
-    years = [1950, 1960, 1970, 1980, 1990, 2000, 2010]
-    gdp = [random.random() for _ in range(len(years))]
+def parse_rows_with(reader, parsers):
+    """wrap a reader to apply the parsers to each of its rows"""
+    for row in reader:
+        yield parse_row(row, parsers)
 
-    plt.plot(years, gdp, color='green', marker='o', linestyle='solid')
-
-    plt.title("A graph title")
-
-    # add a label to the y-axis
-    plt.ylabel("Random Value")
-    plt.show()
-
-def Flip():
-	return 1 if random.random() < .5 else 0
-
-def CountFlip(times):
-	count = 0
-	for _ in range(times):
-		count += Flip()
-	print "Flipped ", count, " heads of ", times, "flips"
-
-def testExtreme():
-
-
-def TestManyTimes(tests,flips)
-	count = 0
-	for _ in range(tests):
-		CountFlip(flips)
-
-def read_csv(path):
-	with open("data/SFPD_Incidents_-_Previous_Three_Months.csv","rb") as f:
-		reader = csv.DictReader(f, delimiter="\t")
-		data = [parse_dict]
-
-
+#
+#
+# My stuff
+#
+#
 
 if __name__ == "__main__":
     random.seed()
-    CountFlip(10000)
+
+    data = []
+
+    with open("data/SFPD_Incidents_-_Previous_Three_Months.csv","rb") as f:
+        reader = csv.DictReader(f, delimiter="\t")
+        for line in parse_rows_with(reader, [dateutil.parser.parse, None, float]):
+            data.append(line)
