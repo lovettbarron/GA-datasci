@@ -18,7 +18,7 @@ def parse_dict(input_dict, parser_dict):
 def parse_row(input_row, parsers):
     """given a list of parsers (some of which may be None)
     apply the appropriate one to each element of the input_row"""
-    return [parser(value) if parser is not None else value
+    return [parser(value) if parser is not None else None
         for value, parser in zip(input_row, parsers)]
 
 def parse_rows_with(reader, parsers):
@@ -32,8 +32,12 @@ def parse_rows_with(reader, parsers):
 #
 #
 
-def count_like(reader):
-    return Counter(row['Category'] for row in reader)
+def count_like(rowName,reader):
+    return Counter(row[rowName] if row[rowName] is not None else None
+        for row in reader)
+
+def mean(x):
+    return sum(x)/ len(x)
 
 if __name__ == "__main__":
     random.seed()
@@ -44,19 +48,20 @@ if __name__ == "__main__":
         reader = csv.DictReader(f)
         # print reader
 
-        data = count_like(reader)
+        data = count_like("Category", reader)
+        print data
+        # print data
 
-        print data.most_common(10)
+    # crime_count = data
+    print [x[1] for x in data]
+    xs = range(data)
 
-        # for row in data:
-        #     print row
-
-
-
-        # for line in parse_rows_with(reader, [dateutil.parser.parse, None, int]):
-        #     data.append(line)
-
-
-    # for row in data:
-    #     if any(x is None for x in row):
-    #         print row
+    ys = [crime_count[x] for x in xs]
+    print xs
+    # data = 
+    plt.bar(xs,xy)
+    plt.axis([0,max(data), 0, 10000])
+    plt.title("Crimes")
+    plt.xlabel("")
+    plt.ylabel("# of people")
+    plt.show()

@@ -3,9 +3,6 @@ import matplotlib.pyplot as plt
 import random, math
 from collections import Counter, defaultdict
 
-
-
-
 def drawBar(plt):
     years = [1950, 1960, 1970, 1980, 1990, 2000, 2010]
     gdp = [random.random() for _ in range(len(years))]
