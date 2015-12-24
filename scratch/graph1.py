@@ -33,8 +33,8 @@ def parse_rows_with(reader, parsers):
 #
 
 def count_like(rowName,reader):
-    return Counter(row[rowName] if row[rowName] is not None else None
-        for row in reader)
+    return list(Counter(row[rowName] if row[rowName] is not None else None
+        for row in reader).items())
 
 def mean(x):
     return sum(x)/ len(x)
@@ -49,12 +49,11 @@ if __name__ == "__main__":
         # print reader
 
         data = count_like("Category", reader)
-        print data
-        # print data
 
+    print data
     # crime_count = data
     print [x[1] for x in data]
-    xs = range(data)
+    xs = range()
 
     ys = [crime_count[x] for x in xs]
     print xs
