@@ -53,10 +53,10 @@ if __name__ == "__main__":
     print data
     # crime_count = data
     print [x[1] for x in data]
-    xs = range()
+    xs = range(max([x[1] for x in data]))
 
     ys = [crime_count[x] for x in xs]
-    print xs
+    print xs, ys
     # data = 
     plt.bar(xs,xy)
     plt.axis([0,max(data), 0, 10000])
