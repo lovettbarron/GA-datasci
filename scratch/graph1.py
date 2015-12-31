@@ -50,16 +50,20 @@ if __name__ == "__main__":
 
         data = count_like("Category", reader)
 
+
+
     print data
     # crime_count = data
-    print [x[1] for x in data]
-    xs = range(max([x[1] for x in data]))
+    # print [x[1] for x in data]
 
-    ys = [crime_count[x] for x in xs]
-    print xs, ys
-    # data = 
-    plt.bar(xs,xy)
-    plt.axis([0,max(data), 0, 10000])
+    max_value = max([x[1] for x in data])
+
+    xs = [x["Time"] for x in reader]
+    ys = [x[""] for x in data]
+    print "xs",xs
+    print "ys",ys
+    plt.bar(xs,ys)
+    plt.axis([0,len(data), 0, 24])
     plt.title("Crimes")
     plt.xlabel("")
     plt.ylabel("# of people")
