@@ -1,0 +1,8 @@
+LICENSE
+Using the attached data acknowledges that you've agreed to these terms:
+You can’t charge people money to look at the data, or sell advertising specifically against it.
+If you use the data for a printed table, chart, graphic or map, you must cite ProPublica and and link to us if you publish online.
+You acknowledge that the data you use may contain errors and omissions, and you are solely responsible for checking our site for any corrections or updates.
+You can't resell the data.
+Before you e-mail us a question, please make sure you've read the explanation of our fields as well as our methodology.
+If you have any questions, e-mail data@propublica.org.
