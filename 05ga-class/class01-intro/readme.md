@@ -155,7 +155,7 @@ Present
 
 (ran around and asked questions) -> We asked Mode of transit and percieved time
 
-Critique of groups:
+#### Critique of groups:
 - Incrase sample sizes, broaden sample group
 - People coming up from Silicon Valley
 - Clustering, "from silicon valley", don't prematurely compress
@@ -164,3 +164,36 @@ Critique of groups:
 - Small sample size means low confidence interval
 - 6 of 16, 30%~ of sample set, but 20% error rate
   
+#### Close experiment
+Best data is the data that is for sale
+We need to be very careful about where get our data from
+
+
+## Data Types
+#### Conntinuous Data
+- Data that any two points you get in it, there is a middle point that makes sense- 
+- Middle ground between age 25 and 26 is 25.5
+- Non categorical
+
+#### Discrete Data
+- Some is continuous, some are not
+- eg. Count number of red and blue people -> be careful about interp
+- Data -> "Qualitative" or Quant -> Discrete (5, int) or Continuous (3.26, float, b/w other vals)
+- Dummy Variables to Qualitative Data
+  
+#### Supervised vs. unsupervised learning
+- Supervised data uses labeled data
+- Unsupervised data uses unstructured data, you might not know the labels
+- Experiment
+- - Take Gender, also record height/weight
+- - Knew outputs (male/female) and guess those qualities
+- - Categorize at random: don't know output. "Tall, medium, short" -> but don't know those clusters per se
+- Unsupervised learning you often don't know the outcome, so you don't know how well you're doing
+- Unsupervised is often best used for pre-processing
+
+- Outcomes and Insputs
+- If you have BOTH Outcome and Input, you have supervised
+- If you have only input, you have unsupervized
+
+####  Lab
+Goes through github pres
