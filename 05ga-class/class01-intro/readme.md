@@ -101,38 +101,45 @@ Data business person -> Make the story your focus
 
 
 ### Overview of Data Workflow
+
 #### 1) Identify the problem
 - Identify the biz product objectives
 - Identify and hypothesize goals andd criteria for success
 - Create a set of questions for identifying correct data sets
 - - What would be the best data needed? Sure, I can get ttransaction data, but as important as transaction data are the searches that didn't end in a purchase
+
 #### 2) Acquire the data
 - Identify the right data sets
 - Import data and set up local/remote data structure
 - determine most approp tool to work with data
+
 #### 3) Parse the data
 - Read any documentation provided
 - - Understand the columns
 - Perform exploratory data analysis
 - - Draw simple graphs
 - Verify the quality of the data
+
 #### 4) Mine the data
 - Determine sampling methodology and sample data
 - - Create Test vs. Data sets. eg. Splitting the data so you don't overfit
 - Format, clean, slice, and combine data in python
 - Create necessary derived columsn from the data (new data)
+
 #### 5) Refine the data
 - Identify trends and outliers
 - - Understanding when to cut outliers to prevent setting off regression analysis
 - Apply descriptive and inferential statistics
 - document and transform data
 - - Manipulating the data where important
+
 #### 6) Build a data model
 - Select appropriate model
 - - You can only know the approp model when you know the full dataset
 - build model
 - evaluate and refine model
 - - At least use two or three models in the dataset for the final project. Explore multiple models!
+
 #### 7) present the results
 - Summarize findings with narrative, storytelling techniques
 - - People with the best stories are the ones who really succeed
