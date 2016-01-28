@@ -96,7 +96,7 @@ We can collect terrabytes of data, but we may only be working on a subset of tha
 
 Data business person -> Make the story your focus
 - Economists are the best storytellers
-- - Eg, Economists
+   Eg, Economists
 ![Areas to focus](https://d3ansictanv2wj.cloudfront.net/images/atan_04in02-50296475.png)
 
 
@@ -106,7 +106,7 @@ Data business person -> Make the story your focus
 - Identify the biz product objectives
 - Identify and hypothesize goals andd criteria for success
 - Create a set of questions for identifying correct data sets
-- - What would be the best data needed? Sure, I can get ttransaction data, but as important as transaction data are the searches that didn't end in a purchase
+   What would be the best data needed? Sure, I can get ttransaction data, but as important as transaction data are the searches that didn't end in a purchase
 
 #### 2) Acquire the data
 - Identify the right data sets
@@ -115,9 +115,9 @@ Data business person -> Make the story your focus
 
 #### 3) Parse the data
 - Read any documentation provided
-- - Understand the columns
+   Understand the columns
 - Perform exploratory data analysis
-- - Draw simple graphs
+   Draw simple graphs
 - Verify the quality of the data
 
 #### 4) Mine the data
@@ -131,18 +131,36 @@ Data business person -> Make the story your focus
 - - Understanding when to cut outliers to prevent setting off regression analysis
 - Apply descriptive and inferential statistics
 - document and transform data
-- - Manipulating the data where important
+   Manipulating the data where important
 
 #### 6) Build a data model
 - Select appropriate model
 - - You can only know the approp model when you know the full dataset
 - build model
 - evaluate and refine model
-- - At least use two or three models in the dataset for the final project. Explore multiple models!
+   At least use two or three models in the dataset for the final project. Explore multiple models!
 
 #### 7) present the results
 - Summarize findings with narrative, storytelling techniques
 - - People with the best stories are the ones who really succeed
-- - Dangerous if you work with something you don't have domain knowledge in. You need to udnerstand
+  Dangerous if you work with something you don't have domain knowledge in. You need to udnerstand
 - Present limitations and assumptions of analysis
 - Identify follow up problems and questions for future analysis
+
+
+## Activity: data science workflow
+Identify: 
+Acquire
+Present
+
+(ran around and asked questions) -> We asked Mode of transit and percieved time
+
+Critique of groups:
+- Incrase sample sizes, broaden sample group
+- People coming up from Silicon Valley
+- Clustering, "from silicon valley", don't prematurely compress
+- Early adopters
+  Early adopters, 5%, don't just ask re: small group re intent but also previous context (eg. iphone in 2008 are early adopters, 6 of class)
+- Small sample size means low confidence interval
+- 6 of 16, 30%~ of sample set, but 20% error rate
+  
