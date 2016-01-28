@@ -1,8 +1,9 @@
-**Class 1 - Intro**
+# Class 1 - Intro
 
 ### TODO
 Write skills, category belonged, and category target re: https://www.oreilly.com/ideas/analyzing-the-analyzers
 
+## Logistics
 Class 7 -> Ready at 530~
 
 **People**
@@ -57,7 +58,7 @@ Learn by doing
 - Set up github
 - intro python
 
-**1: What is Data Sci**
+## 1: What is Data Sci
 Statistics, computation, and storytelling
 How do you tell a story with data?
 - "analysis of data using the scientific method (it may be the most overused term of the year, but you're ulikely to have a meeting where the topic odesn't come up)" [Shelly Palmer]
@@ -80,10 +81,62 @@ Engineering skills to acquire and manage large data sets, and statistician skill
 - x: Data Businessperson, Data Creative, Data Developer, Data Researcher
 - y: Business, ML/BigData,Math/OR,Programming
 
-Question of how you identify as a designer
+### Question of how you identify as a designer
 ![Who are you](https://d3ansictanv2wj.cloudfront.net/images/3-SkillsSelfDMosaic-2-6c755564.png)
 
-Volume of data used
+### Volume of data used
 
 ![Volume](https://d3ansictanv2wj.cloudfront.net/images/atan_03in04-42d954c4.png)
 
+We can collect terrabytes of data, but we may only be working on a subset of that
+
+### T-shaped data scientist
+
+![T shaped](https://d3ansictanv2wj.cloudfront.net/images/atan_04in01-be7264b9.png)
+
+Data business person -> Make the story your focus
+- Economists are the best storytellers
+- - Eg, Economists
+![Areas to focus](https://d3ansictanv2wj.cloudfront.net/images/atan_04in02-50296475.png)
+
+
+### Overview of Data Workflow
+- Steps
+1) Identify the problem
+- Identify the biz product objectives
+- Identify and hypothesize goals andd criteria for success
+- Create a set of questions for identifying correct data sets
+- - What would be the best data needed? Sure, I can get ttransaction data, but as important as transaction data are the searches that didn't end in a purchase
+2) Acquire the data
+- Identify the right data sets
+- Import data and set up local/remote data structure
+- determine most approp tool to work with data
+3) Parse the data
+- Read any documentation provided
+- - Understand the columns
+- Perform exploratory data analysis
+- - Draw simple graphs
+- Verify the quality of the data
+4) Mine the data
+- Determine sampling methodology and sample data
+- - Create Test vs. Data sets. eg. Splitting the data so you don't overfit
+- Format, clean, slice, and combine data in python
+- Create necessary derived columsn from the data (new data)
+5) Refine the data
+- Identify trends and outliers
+- - Understanding when to cut outliers to prevent setting off regression analysis
+- Apply descriptive and inferential statistics
+- document and transform data
+- - Manipulating the data where important
+6) Build a data model
+- Select appropriate model
+- - You can only know the approp model when you know the full dataset
+- build model
+- evaluate and refine model
+- - At least use two or three models in the dataset for the final project. Explore multiple models!
+7) present the results
+- Summarize findings with narrative, storytelling techniques
+- - People with the best stories are the ones who really succeed
+- - Dangerous if you work with something you don't have domain knowledge in. You need to udnerstand
+- Present limitations and assumptions of analysis
+- Identify follow up problems and questions for future analysis
